@@ -36,22 +36,22 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Restore dependencies for Notification
-        run: dotnet restore HomeRun_Case/Notification.Api/Notification.Api.csproj
+        run: dotnet restore Notification.Api/Notification.Api.csproj
 
       - name: Build Notification
-        run: dotnet build HomeRun_Case/Notification.Api/Notification.Api.csproj --configuration Release --no-restore
+        run: dotnet build Notification.Api/Notification.Api.csproj --configuration Release --no-restore
 
       - name: Test Notification
-        run: dotnet test HomeRun_Case/Notification.UnitTests/Notification.UnitTests.csproj --no-restore --verbosity normal
+        run: dotnet test Notification.UnitTests/Notification.UnitTests.csproj --no-restore --verbosity normal
 
       - name: Restore dependencies for Rating
-        run: dotnet restore HomeRun_Case/Rating.Api/Rating.Api.csproj
+        run: dotnet restore Rating.Api/Rating.Api.csproj
 
       - name: Build Rating
-        run: dotnet build HomeRun_Case/Rating.Api/Rating.Api.csproj --configuration Release --no-restore
+        run: dotnet build Rating.Api/Rating.Api.csproj --configuration Release --no-restore
 
       - name: Test Rating
-        run: dotnet test HomeRun_Case/Rating.UnitTests/Rating.UnitTests.csproj --no-restore --verbosity normal
+        run: dotnet test Rating.UnitTests/Rating.UnitTests.csproj --no-restore --verbosity normal
 
       - name: Build and push Docker image for Notification
         run: docker-compose -f notification-docker-compose-build.yml build
