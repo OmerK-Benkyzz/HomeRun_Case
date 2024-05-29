@@ -1,0 +1,53 @@
+version: '3.4'
+
+services:
+  notification:
+    image: notificationapiservice
+    ports:
+      - "5001:80"
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - homerun_case
+
+  rating:
+    image: ratingapiservice
+    ports:
+      - "5002:80"
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - homerun_case
+
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    networks:
+      - homerun_case
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+
+  postgres:
+    image: "postgres:13"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - homerun_case
+
+volumes:
+  postgres_data:
+
+networks:
+  homerun_case:
+    driver: bridge

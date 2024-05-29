@@ -1,0 +1,15 @@
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/bin/Debug/net7.0/Notification.Domain.deps.json
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/bin/Debug/net7.0/Notification.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/bin/Debug/net7.0/Notification.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/bin/Debug/net7.0/Core.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/bin/Debug/net7.0/Core.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.csproj.AssemblyReference.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.AssemblyInfoInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.AssemblyInfo.cs
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.csproj.CoreCompileInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.csproj.CopyComplete
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/refint/Notification.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/Notification.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/obj/Debug/net7.0/ref/Notification.Domain.dll

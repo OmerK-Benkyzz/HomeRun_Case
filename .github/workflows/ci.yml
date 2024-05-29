@@ -1,0 +1,68 @@
+name: .NET Core CI
+
+on:
+  push:
+    branches:
+      - task/*
+  pull_request:
+    branches:
+      - task/*
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    services:
+      rabbitmq:
+        image: rabbitmq:3-management
+        ports:
+          - 5672:5672
+          - 15672:15672
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '7.0.x'
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Restore dependencies for Notification
+        run: dotnet restore HomeRun_Case/Notification.Api/Notification.Api.csproj
+
+      - name: Build Notification
+        run: dotnet build HomeRun_Case/Notification.Api/Notification.Api.csproj --configuration Release --no-restore
+
+      - name: Test Notification
+        run: dotnet test HomeRun_Case/Notification.UnitTests/Notification.UnitTests.csproj --no-restore --verbosity normal
+
+      - name: Restore dependencies for Rating
+        run: dotnet restore HomeRun_Case/Rating.Api/Rating.Api.csproj
+
+      - name: Build Rating
+        run: dotnet build HomeRun_Case/Rating.Api/Rating.Api.csproj --configuration Release --no-restore
+
+      - name: Test Rating
+        run: dotnet test HomeRun_Case/Rating.UnitTests/Rating.UnitTests.csproj --no-restore --verbosity normal
+
+      - name: Build and push Docker image for Notification
+        run: docker-compose -f notification-docker-compose-build.yml build
+      - name: Push Notification Docker image
+        run: |
+          docker tag notificationapiservice ${{ secrets.DOCKER_HUB_USERNAME }}/notification:latest
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/notification:latest
+
+      - name: Build and push Docker image for Rating
+        run: docker-compose -f rating-docker-compose-build.yml build
+      - name: Push Rating Docker image
+        run: |
+          docker tag ratingapiservice ${{ secrets.DOCKER_HUB_USERNAME }}/rating:latest
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/rating:latest

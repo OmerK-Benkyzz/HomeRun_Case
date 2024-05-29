@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "7xize40KmFJQzQ9rbhiqNcym9963rsNH5og9pdBiqYGPaDZLMTW2F26ISnd3nDbpUFiIQIuRk4/B0AFj+iu5Ig==",
+  "success": true,
+  "projectFilePath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Notification.Domain/Notification.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/omerfarukkayaoglu/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/mongodb.bson/2.25.0/mongodb.bson.2.25.0.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/omerfarukkayaoglu/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.2.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

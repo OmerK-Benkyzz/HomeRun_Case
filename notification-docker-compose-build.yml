@@ -1,0 +1,8 @@
+version: '2.0'
+
+services:
+    notificationapiservice:
+        image: notificationapiservice
+        build:
+            context: .
+            dockerfile: Notification.Api/Dockerfile

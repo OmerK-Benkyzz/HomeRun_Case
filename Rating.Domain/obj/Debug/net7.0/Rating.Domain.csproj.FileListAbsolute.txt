@@ -1,0 +1,15 @@
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/bin/Debug/net7.0/Rating.Domain.deps.json
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/bin/Debug/net7.0/Rating.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/bin/Debug/net7.0/Rating.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.csproj.AssemblyReference.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.AssemblyInfoInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.AssemblyInfo.cs
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.csproj.CoreCompileInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/refint/Rating.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/ref/Rating.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/bin/Debug/net7.0/Core.Domain.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/bin/Debug/net7.0/Core.Domain.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/Debug/net7.0/Rating.Domain.csproj.CopyComplete

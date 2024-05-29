@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Interfaces\Services\" />
+        <Folder Include="Queries\" />
+        <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.9.1" />
+        <PackageReference Include="MassTransit.Abstractions" Version="8.2.2" />
+        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+        <ProjectReference Include="..\Core.Persistance\Core.Persistance.csproj" />
+        <ProjectReference Include="..\Rating.Domain\Rating.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

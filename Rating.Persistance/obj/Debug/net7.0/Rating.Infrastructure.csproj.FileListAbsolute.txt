@@ -1,0 +1,12 @@
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/bin/Debug/net7.0/Rating.Infrastructure.deps.json
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/bin/Debug/net7.0/Rating.Infrastructure.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/bin/Debug/net7.0/Rating.Infrastructure.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.csproj.AssemblyReference.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.AssemblyInfoInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.AssemblyInfo.cs
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/refint/Rating.Infrastructure.dll
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/Rating.Infrastructure.pdb
+/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Infrastructure/obj/Debug/net7.0/ref/Rating.Infrastructure.dll

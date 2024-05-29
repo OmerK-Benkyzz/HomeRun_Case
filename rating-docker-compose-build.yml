@@ -1,0 +1,8 @@
+version: '2.0'
+
+services:
+    ratingapiservice:
+        image: ratingapiservice
+        build:
+            context: .
+            dockerfile: Rating.Api/Dockerfile

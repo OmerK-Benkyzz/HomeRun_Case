@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a4d18e89_002D27bf_002D4d41_002D9d74_002D5a01f0cc7cbd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from GetNotificationsQueryHandlerTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;2DA17616-AD97-4FCC-92AF-F23D368F62FB/f:GetNotificationsQueryHandlerTests.cs&lt;/ProjectFile&gt;
+    &lt;Project Location="/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.UnitTests" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;Rating.UnitTests&amp;gt;" /&gt;
+    &lt;ProjectFile&gt;2DA17616-AD97-4FCC-92AF-F23D368F62FB/f:DatabaseFixture.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;2DA17616-AD97-4FCC-92AF-F23D368F62FB/f:NotificationIntegrationTests.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

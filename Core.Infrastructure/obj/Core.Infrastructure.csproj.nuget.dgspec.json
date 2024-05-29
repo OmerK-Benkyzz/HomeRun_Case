@@ -1,0 +1,410 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Infrastructure/Core.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/Core.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/Core.Application.csproj",
+        "projectName": "Core.Application",
+        "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/Core.Application.csproj",
+        "packagesPath": "/Users/omerfarukkayaoglu/.nuget/packages/",
+        "outputPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/omerfarukkayaoglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/loodos/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj": {
+                "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj"
+              },
+              "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/Rating.Application.csproj": {
+                "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/Rating.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.63.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.19, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj",
+        "projectName": "Core.Domain",
+        "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj",
+        "packagesPath": "/Users/omerfarukkayaoglu/.nuget/packages/",
+        "outputPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/omerfarukkayaoglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/loodos/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Infrastructure/Core.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Infrastructure/Core.Infrastructure.csproj",
+        "projectName": "Core.Infrastructure",
+        "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Infrastructure/Core.Infrastructure.csproj",
+        "packagesPath": "/Users/omerfarukkayaoglu/.nuget/packages/",
+        "outputPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/omerfarukkayaoglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/loodos/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/Core.Application.csproj": {
+                "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Application/Core.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/Rating.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/Rating.Application.csproj",
+        "projectName": "Rating.Application",
+        "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/Rating.Application.csproj",
+        "packagesPath": "/Users/omerfarukkayaoglu/.nuget/packages/",
+        "outputPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/omerfarukkayaoglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/loodos/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj": {
+                "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Core.Domain/Core.Domain.csproj"
+              },
+              "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/Rating.Domain.csproj": {
+                "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/Rating.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            },
+            "MassTransit.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/Rating.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/Rating.Domain.csproj",
+        "projectName": "Rating.Domain",
+        "projectPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/Rating.Domain.csproj",
+        "packagesPath": "/Users/omerfarukkayaoglu/.nuget/packages/",
+        "outputPath": "/Users/omerfarukkayaoglu/Desktop/r_123/HomeRun_Case/Rating.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/omerfarukkayaoglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/loodos/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
