@@ -10,6 +10,9 @@ public class PaginateConverter<TSource, TDestination> : ITypeConverter<IPaginate
         IPaginate<TDestination> destination,
         ResolutionContext context)
     {
+
+
+    
         return Paginate.From(source, items => context.Mapper.Map<IEnumerable<TDestination>>(items));
     }
 }
