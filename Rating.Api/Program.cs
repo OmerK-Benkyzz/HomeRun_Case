@@ -1,7 +1,9 @@
 using Core.Application.Configurations;
 using Core.Application.Configurations.Registration;
+using Core.Application.Extensions;
 using Core.Persistance.Configuration;
 using Rating.Api.Middlewares;
+using Rating.Persistance.Context;
 using Rating.Persistance.Registration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +35,8 @@ void ConfigureServices(IServiceCollection services, IConfiguration configuration
 void Configure(WebApplication application)
 {
     application.UseMiddleware<ValidationExceptionHandlerMiddleware>();
+
+    application.MigrateDatabase<RatingDbContext>();
 
     application.UseHttpsRedirection();
 
