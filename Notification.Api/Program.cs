@@ -1,7 +1,9 @@
 using Core.Application.Configurations;
 using Core.Application.Configurations.Registration;
+using Core.Application.Extensions;
 using Core.Persistance.Configuration;
 using Notification.Application.Consumers;
+using Notification.Persistance.Context;
 using Notification.Persistance.Registration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,10 +42,12 @@ void Configure(WebApplication application)
 {
     application.UseHttpsRedirection();
 
+    application.MigrateDatabase<NotificationDbContext>();
+
     application.UseAuthorization();
 
     application.MapControllers();
-    
+
     if (application.Environment.IsDevelopment())
     {
         application.UseSwagger();
