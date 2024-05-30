@@ -30,8 +30,8 @@ Follow these steps to set up and run the project:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/OmerK-Benkyzz/testutest123.git
-    cd testutest123
+    git clone https://github.com/OmerK-Benkyzz/HomeRun_Case.git
+    cd HomeRun_Case
     ```
 
 2. Restore the dependencies:
@@ -46,25 +46,24 @@ Follow these steps to set up and run the project:
 
 ## API Endpoints
 
-### Notification Service
+### Notification API
 
-The Notification Service provides the following endpoints:
+- **GET /GetNotification/{serviceProviderId}**: Retrieves notifications for a specific service provider with pagination support.
+    ```sh
+    curl -X GET "http://localhost:5001/GetNotification/{serviceProviderId}?pageIndex=0&pageSize=10"
+    ```
 
-- **GET /api/notifications**: Retrieves a list of notifications.
-- **GET /api/notifications/{id}**: Retrieves a specific notification by ID.
-- **POST /api/notifications**: Creates a new notification.
-- **PUT /api/notifications/{id}**: Updates an existing notification.
-- **DELETE /api/notifications/{id}**: Deletes a notification by ID.
+### Rating API
 
-### Rating Service
+- **POST /RateServiceProvider**: Submits a rating for a service provider.
+    ```sh
+    curl -X POST http://localhost:5002/api/Rating/RateServiceProvider -H "Content-Type: application/json" -d '{"serviceProviderId": "guid", "score": 5, "comment": "Great service!"}'
+    ```
 
-The Rating Service provides the following endpoints:
-
-- **GET /api/ratings**: Retrieves a list of ratings.
-- **GET /api/ratings/{id}**: Retrieves a specific rating by ID.
-- **POST /api/ratings**: Creates a new rating.
-- **PUT /api/ratings/{id}**: Updates an existing rating.
-- **DELETE /api/ratings/{id}**: Deletes a rating by ID.
+- **GET /GetAvarageRating/{serviceProviderId}**: Retrieves the average rating for a specific service provider.
+    ```sh
+    curl -X GET http://localhost:5002/api/Rating/GetAvarageRating/{serviceProviderId}
+    ```
 
 ## Running the Application
 
@@ -92,3 +91,39 @@ To run the unit tests, use the following command:
 ```sh
 dotnet test Notification.UnitTests/Notification.UnitTests.csproj --no-restore --verbosity normal
 dotnet test Rating.UnitTests/Rating.UnitTests.csproj --no-restore --verbosity normal
+
+## CI/CD Pipeline
+
+This project uses a CI/CD pipeline to automate the build and deployment processes. The pipeline is configured using GitHub Actions, which are located in the `.github/workflows` directory.
+
+### Setting Up the CI/CD Pipeline
+
+1. Create a new branch for your feature or bug fix:
+    ```sh
+    git checkout -b task/your-feature-name
+    ```
+
+2. Make your changes and commit them:
+    ```sh
+    git add .
+    git commit -m "Description of your changes"
+    ```
+
+3. Push the changes to your branch:
+    ```sh
+    git push origin task/your-feature-name
+    ```
+
+4. Open a pull request on GitHub to merge your branch into the `main` branch.
+
+### CI/CD Pipeline Overview
+
+The CI/CD pipeline performs the following tasks:
+- **Build**: Compiles the application and runs unit tests.
+- **Docker Build**: Builds Docker images for the services.
+- **Deploy**: Deploys the Docker containers.
+
+### Running the Pipeline Manually
+
+If you need to run the pipeline manually, you can trigger it through the GitHub Actions interface on the repository page.
+
