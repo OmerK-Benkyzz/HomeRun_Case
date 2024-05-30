@@ -39,10 +39,10 @@ jobs:
         run: dotnet restore Notification.Api/Notification.Api.csproj
 
       - name: Build Notification
-        run: dotnet build Notification.Api/Notification.Api.csproj --configuration Release --no-restore
+        run: dotnet build Notification.Api/Notification.Api.csproj --configuration Release 
 
       - name: Test Notification
-        run: dotnet test Notification.UnitTests/Notification.UnitTests.csproj --no-restore --verbosity normal
+        run: dotnet test Notification.UnitTests/Notification.UnitTests.csproj  --verbosity normal
 
       - name: Restore dependencies for Rating
         run: dotnet restore Rating.Api/Rating.Api.csproj
@@ -51,7 +51,7 @@ jobs:
         run: dotnet build Rating.Api/Rating.Api.csproj --configuration Release --no-restore
 
       - name: Test Rating
-        run: dotnet test Rating.UnitTests/Rating.UnitTests.csproj --no-restore --verbosity normal
+        run: dotnet test Rating.UnitTests/Rating.UnitTests.csproj --verbosity normal
 
       - name: Build and push Docker image for Notification
         run: docker-compose -f notification-docker-compose-build.yml build
